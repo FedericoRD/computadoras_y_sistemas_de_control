@@ -67,7 +67,7 @@ bool muestreo_periodico(struct repeating_timer *t) {
   }
   else {
     // Canal 0: potenciometro. Calcular el valor de temperatura equivalente (4095 = 35 grados)
-    
+    setpoint = adc_value*35/4095
   }
 
   // Verifico que se hayan leido ambos canales antes de activar el control
